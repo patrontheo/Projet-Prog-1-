@@ -2,7 +2,7 @@
 #include <vector>
 #include <cmath>
 #include "Vecteur.h"
-j'ai rien modifie
+
 using namespace std;
 
 typedef std:: vector<double> coord;
@@ -25,7 +25,6 @@ void Vecteur ::set_coord(int i, double x)
     }
 }
 
-testr modeu;
 void Vecteur:: affiche() const
 {
     for (size_t i(0); i < vec.size(); ++i)
