@@ -25,7 +25,7 @@ void Vecteur ::set_coord(int i, double x)
     }
 }
 
-
+testr modeu;
 void Vecteur:: affiche() const
 {
     for (size_t i(0); i < vec.size(); ++i)
