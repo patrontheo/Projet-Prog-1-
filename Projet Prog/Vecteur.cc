@@ -3,7 +3,6 @@
 #include <cmath>
 #include "Vecteur.h"
 
-kj;
 using namespace std;
 
 typedef std:: vector<double> coord;
