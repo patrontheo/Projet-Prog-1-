@@ -2,7 +2,7 @@
 #include <vector>
 #include <cmath>
 #include "Vecteur.h"
-
+j'ai rien modifie
 using namespace std;
 
 typedef std:: vector<double> coord;
