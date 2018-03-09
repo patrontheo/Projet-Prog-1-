@@ -3,6 +3,7 @@
 #include <cmath>
 #include "Vecteur.h"
 
+int i;
 
 using namespace std;
 
