@@ -2,7 +2,7 @@
 #include <vector>
 #include <cmath>
 #include "Vecteur.h"
-
+rigurgiur;
 using namespace std;
 
 typedef std:: vector<double> coord;
