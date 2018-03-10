@@ -2,11 +2,10 @@
 #include <vector>
 #include <cmath>
 #include "Vecteur.h"
-j'ai rien modifie
+
 using namespace std;
 
 typedef std:: vector<double> coord;
-
 
 void Vecteur :: augmente(double x)
 {
@@ -25,7 +24,7 @@ void Vecteur ::set_coord(int i, double x)
     }
 }
 
-testr modeu;
+
 void Vecteur:: affiche() const
 {
     for (size_t i(0); i < vec.size(); ++i)
@@ -148,10 +147,4 @@ Vecteur Vecteur:: prod_vect(Vecteur vec2) const
     resultat.vec.push_back(vec[0] * vec2.vec[1] - vec2.vec[0] * vec[1]);
     return resultat;
 }
-
-
-
-
-
-
 

@@ -2,7 +2,6 @@
 #include <vector>
 
 
-
 typedef std::vector<double> coord;
 
 class Vecteur {
@@ -13,7 +12,6 @@ private:
 public:
     
     void augmente(double x);
-    
     void set_coord(int i, double x);
     void affiche() const;
     bool compare(Vecteur autre);
@@ -26,6 +24,3 @@ public:
     Vecteur mult(double l) const;
     Vecteur prod_vect(Vecteur vec2) const;
 };
-
-
-
