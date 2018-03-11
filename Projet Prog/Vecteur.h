@@ -37,6 +37,8 @@ public:
         }
     }
     
+    Vecteur (Vecteur const& autre) : vec(autre.vec) {}
+    
     
     void augmente(double x);
     void set_coord(int i, double x);
