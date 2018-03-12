@@ -7,6 +7,7 @@ using namespace std;
 
 typedef std:: vector<double> coord;
 
+
 void Vecteur :: augmente(double x)
 {
     vec.push_back(x);
@@ -57,10 +58,10 @@ bool Vecteur::compare(Vecteur autre)
 
 Vecteur Vecteur:: addition(Vecteur autre) const
 {
-    Vecteur resultat;
+    Vecteur resultat(fmin(vec.size(), autre.vec.size()));
     for (size_t i(0); fmin(vec.size(), autre.vec.size()) > i; ++i)
     {
-        resultat.vec.push_back(vec[i] + autre.vec[i]);
+        resultat.vec[i]=vec[i]+autre.vec[i];
     }
     return resultat;
 }
@@ -69,10 +70,11 @@ Vecteur Vecteur:: addition(Vecteur autre) const
 Vecteur Vecteur::soustraction(Vecteur autre) const
 {
     
-    Vecteur resultat;
+    Vecteur resultat(fmin(vec.size(), autre.vec.size()));
     for (size_t i(0); fmin(vec.size(), autre.vec.size()) > i; ++i)
     {
-        resultat.vec.push_back(vec[i] - autre.vec[i]);
+        resultat.vec[i]=vec[i]-autre.vec[i];
+
     }
     return resultat;
 }
@@ -115,10 +117,10 @@ double Vecteur::norme2()
 
 Vecteur Vecteur:: oppose() const
 {
-    Vecteur resultat;
-    for (auto element : vec)
+    Vecteur resultat(vec.size());
+    for (size_t i(0); i<vec.size(); ++i)
     {
-        resultat.vec.push_back(-element);
+        resultat.vec[i]=-vec[i];
     }
     return resultat;
     
@@ -126,10 +128,10 @@ Vecteur Vecteur:: oppose() const
 
 Vecteur Vecteur:: mult(double l) const
 {
-    Vecteur resultat;
-    for (auto element : vec)
+    Vecteur resultat(vec.size());
+    for (size_t i(0); i<vec.size(); ++i)
     {
-        resultat.vec.push_back(l*element);
+        resultat.vec[i]= l*vec[i];
     }
     return resultat;
 }
@@ -140,10 +142,10 @@ Vecteur Vecteur:: prod_vect(Vecteur vec2) const
     {
         throw string("erreur de dimension");
     }
-    Vecteur resultat;
-    resultat.vec.push_back(vec[1] * vec2.vec[2] - vec2.vec[1] * vec[2]);
-    resultat.vec.push_back(vec[2] * vec2.vec[0] - vec2.vec[2] * vec[0]);
-    resultat.vec.push_back(vec[0] * vec2.vec[1] - vec2.vec[0] * vec[1]);
+    Vecteur resultat(3);
+    resultat.vec[0]=(vec[1] * vec2.vec[2] - vec2.vec[1] * vec[2]);
+    resultat.vec[1]=(vec[2] * vec2.vec[0] - vec2.vec[2] * vec[0]);
+    resultat.vec[0]=(vec[0] * vec2.vec[1] - vec2.vec[0] * vec[1]);
     return resultat;
 }
 

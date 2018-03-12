@@ -8,8 +8,8 @@ typedef vector<double> coord;
 
 int main()
 {
-    Vecteur v1;
-    Vecteur v2;
+    Vecteur v1(3);
+    Vecteur v2(2.0,3.0,-1.2);
     for (int i(0); i < 6; ++i)
     {
         double x;
@@ -33,7 +33,7 @@ int main()
     Vecteur v6(v1.oppose());
     Vecteur v7(v1.mult(10.0));
     
-    Vecteur v8;
+    Vecteur v8(1);
     
     try
     {

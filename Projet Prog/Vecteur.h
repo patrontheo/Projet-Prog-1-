@@ -13,7 +13,7 @@ public:
     
     // Nouvelles modifications : Constructeurs
     
-    Vecteur (int dimension )
+    Vecteur (size_t dimension )
     {
         for (size_t i(0); i<dimension; ++i)
         {
