@@ -18,11 +18,17 @@ public:
     Vecteur (coord initialisation);
     Vecteur (Vecteur const& autre) : vec(autre.vec) {}
     
-  // Methodes
+//  OPERATEURS INTERNES
+    
+    
+    
+    
+    
+// METHODES
     
     void augmente(double x);
     void set_coord(int i, double x);
-    void affiche() const;
+    void Vecteur::affiche(ostream& s) const;
     bool compare(Vecteur autre);
     Vecteur addition(Vecteur autre) const;
     Vecteur soustraction(Vecteur autre) const;

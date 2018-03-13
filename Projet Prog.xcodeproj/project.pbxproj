@@ -30,6 +30,7 @@
 		BA38E43D2052EB6000A840FF /* testVecteur.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testVecteur.cc; sourceTree = "<group>"; };
 		BA38E43F2052EB6B00A840FF /* Vecteur.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vecteur.cc; sourceTree = "<group>"; };
 		BA38E4412052EBA600A840FF /* makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		BA38E445205821C800A840FF /* Reponse  */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Reponse "; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 				BA38E43D2052EB6000A840FF /* testVecteur.cc */,
 				BA38E4412052EBA600A840FF /* makefile */,
 				BA38E43F2052EB6B00A840FF /* Vecteur.cc */,
+				BA38E445205821C800A840FF /* Reponse  */,
 			);
 			path = "Projet Prog";
 			sourceTree = "<group>";

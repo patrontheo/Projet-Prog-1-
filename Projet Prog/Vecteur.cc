@@ -26,14 +26,15 @@ void Vecteur ::set_coord(int i, double x)
     }
 }
 
-void Vecteur:: affiche() const
+void Vecteur::affiche(ostream& cout) const
 {
-    for (size_t i(0); i < vec.size(); ++i)
+    cout<<" ";
+    for (size_t i(0); i< vec.size(); ++i)
     {
-        cout << vec[i] << " ";
+        cout<<vec[i]<<" ";
     }
+    cout<<endl;
 }
-
 
 bool Vecteur::compare(Vecteur autre)
 {
@@ -158,7 +159,7 @@ Vecteur:: Vecteur(size_t dimension )
 {
     for (size_t i(0); i<dimension; ++i)
     {
-        vec.push_back(0);
+        vec.push_back(0.0);
     }
     
 }
@@ -178,6 +179,5 @@ Vecteur:: Vecteur (coord initialisation)
         vec.push_back(initialisation[i]);
     }
 }
-
 
 
