@@ -145,7 +145,7 @@ Vecteur Vecteur:: prod_vect(Vecteur vec2) const
     Vecteur resultat(3);
     resultat.vec[0]=(vec[1] * vec2.vec[2] - vec2.vec[1] * vec[2]);
     resultat.vec[1]=(vec[2] * vec2.vec[0] - vec2.vec[2] * vec[0]);
-    resultat.vec[0]=(vec[0] * vec2.vec[1] - vec2.vec[0] * vec[1]);
+    resultat.vec[2]=(vec[0] * vec2.vec[1] - vec2.vec[0] * vec[1]);
     return resultat;
 }
 
