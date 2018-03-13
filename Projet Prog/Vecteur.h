@@ -11,34 +11,14 @@ private:
     
 public:
     
-    // Nouvelles modifications : Constructeurs
+ // Constructeurs
     
-    Vecteur (size_t dimension )
-    {
-        for (size_t i(0); i<dimension; ++i)
-        {
-            vec.push_back(0);
-        }
-        
-    }
-    
-    Vecteur (double x, double y, double z)
-    {
-        Vecteur(3);
-        vec[0]=x;
-        vec[1]=y;
-        vec[2]=z;
-    }
-    Vecteur (coord initialisation)
-    {
-        for (size_t i(0); i<initialisation.size(); ++i)
-        {
-            vec.push_back(initialisation[i]);
-        }
-    }
-    
+    Vecteur (size_t dimension );
+    Vecteur (double x, double y, double z);
+    Vecteur (coord initialisation);
     Vecteur (Vecteur const& autre) : vec(autre.vec) {}
     
+  // Methodes
     
     void augmente(double x);
     void set_coord(int i, double x);

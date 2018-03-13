@@ -4,6 +4,7 @@
 #include "Vecteur.h"
 
 using namespace std;
+//=============================================DECLARATION METHODES=======================================================
 
 typedef std:: vector<double> coord;
 
@@ -148,4 +149,35 @@ Vecteur Vecteur:: prod_vect(Vecteur vec2) const
     resultat.vec[2]=(vec[0] * vec2.vec[1] - vec2.vec[0] * vec[1]);
     return resultat;
 }
+
+
+// =====================================DEFINITIONS CONSTRUCTEURS=========================================================
+
+
+Vecteur:: Vecteur(size_t dimension )
+{
+    for (size_t i(0); i<dimension; ++i)
+    {
+        vec.push_back(0);
+    }
+    
+}
+
+Vecteur:: Vecteur (double x, double y, double z)
+{
+    Vecteur(3);
+    vec[0]=x;
+    vec[1]=y;
+    vec[2]=z;
+}
+
+Vecteur:: Vecteur (coord initialisation)
+{
+    for (size_t i(0); i<initialisation.size(); ++i)
+    {
+        vec.push_back(initialisation[i]);
+    }
+}
+
+
 
