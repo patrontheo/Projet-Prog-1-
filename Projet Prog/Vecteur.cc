@@ -240,12 +240,12 @@ const Vecteur operator /(Vecteur v, double a)            //Division par un scala
     return v;
 }
 
-const Vecteur operator *(double a, Vecteur v)
+const Vecteur operator *(double a, Vecteur v)       //Multiplication par un scalaire
 {
     v *= a;
     return v;
 }
-//Multiplication par un scalaire
+
 const Vecteur operator *(Vecteur v, double a)
 {
     return (a * v);

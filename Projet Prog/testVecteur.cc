@@ -29,6 +29,19 @@ int main()
     
     double j(vect1*vect2);
     cout<<"Le produit scalaire de Vect1 et Vect2 vaut :"<<j<<endl;
+    
+    vect1/=2.0;
+    cout<<"Apres une division par 2 vect1 vaut :"<<vect1<<endl;
+    
+    vect1*=4.0;
+    cout<<"Apres une multiplication par 4 vect1 vaut : "<<vect1<<endl;
+    
+    Vecteur vect5(vect1-vect2);
+    cout<<"Vect1 - Vect2 vaut : "<<vect5<<endl;
+    
+    Vecteur vect6(vect1+vect2);
+    cout<<"Vect1 + Vect2 vaut : "<<vect6<<endl;
+    
 
     
     
