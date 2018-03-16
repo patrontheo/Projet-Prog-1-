@@ -20,7 +20,8 @@ public:
     Vecteur (Vecteur const& autre) : vec(autre.vec) {}
     
 //  OPERATEURS INTERNES
-    
+    Vecteur operator +=(Vecteur const& w);
+    Vecteur  operator -=(Vecteur const& w);
     
 // METHODES
     
