@@ -210,6 +210,48 @@ const Vecteur Vecteur::operator^(Vecteur vec2) const
 	return resultat;
 }
 
+void Vecteur::operator *=(double a)                //Multiplication par un scalaire
+{
+    for(size_t i(0); i < vec.size(); ++i)
+    { vec[i] = vec[i] * a; }
+}
+
+void Vecteur::operator /=(double a)                //Division par un scalaire
+{
+    for(size_t i(0); i < vec.size(); ++i)
+    { vec[i] = vec[i] / a; }
+}
+
+const Vecteur operator +(Vecteur v, Vecteur const& w)  //Addition
+{
+    v += w;
+    return v;
+}
+
+const Vecteur operator -(Vecteur v, Vecteur const& w)  //Soustraction
+{
+    v -=w;
+    return v;
+}
+
+const Vecteur operator /(Vecteur v, double a)            //Division par un scalaire
+{
+    v /= a;
+    return v;
+}
+
+const Vecteur operator *(double a, Vecteur v)
+{
+    v *= a;
+    return v;
+}
+//Multiplication par un scalaire
+const Vecteur operator *(Vecteur v, double a)
+{
+    return (a * v);
+}
+
+
 
 
 

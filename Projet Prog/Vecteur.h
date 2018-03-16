@@ -24,6 +24,8 @@ public:
     Vecteur  operator -=(Vecteur const& w);
     const bool operator==(Vecteur autre);
     double operator*(Vecteur v1);
+    void operator *=(double a);
+    void operator /=(double a);
 
 
 
@@ -47,4 +49,9 @@ public:
 
 std::ostream& operator<<(std::ostream& sortie, Vecteur const & autre);
 const bool operator!=(Vecteur, Vecteur const&);
+const Vecteur operator +(Vecteur v, Vecteur const& w);
+const Vecteur operator -(Vecteur v, Vecteur const& w);
+const Vecteur operator /(Vecteur v, double a) ;
+const Vecteur operator *(double a, Vecteur v);
+const Vecteur operator *(Vecteur v, double a);
 
