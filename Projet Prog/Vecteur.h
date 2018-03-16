@@ -23,7 +23,7 @@ public:
     Vecteur operator +=(Vecteur const& w);
     Vecteur  operator -=(Vecteur const& w);
     const bool operator==(Vecteur autre);
-    double operator*(Vecteur v1);
+    double operator*(Vecteur autre) const;
     void operator *=(double a);
     void operator /=(double a);
 
@@ -36,7 +36,6 @@ public:
     void affiche(std::ostream& cout) const;
     Vecteur addition(Vecteur autre) const;
     Vecteur soustraction(Vecteur autre) const;
-	double operator*(Vecteur) const;
     double norme();
     double norme2();
     Vecteur oppose() const;
