@@ -22,7 +22,11 @@ public:
 //  OPERATEURS INTERNES
     Vecteur operator +=(Vecteur const& w);
     Vecteur  operator -=(Vecteur const& w);
-    
+    const bool operator==(Vecteur autre);
+    double operator*(Vecteur v1);
+
+
+
 // METHODES
     
     void augmente(double x);
@@ -43,3 +47,4 @@ public:
 
 std::ostream& operator<<(std::ostream& sortie, Vecteur const & autre);
 const bool operator!=(Vecteur, Vecteur const&);
+

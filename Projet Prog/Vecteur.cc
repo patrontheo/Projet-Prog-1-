@@ -160,10 +160,6 @@ Vecteur Vecteur:: operator -=(Vecteur const& w)  //Soustraction
     return *this;
 }
 
-
-
-
-
 const bool Vecteur::operator==(Vecteur autre)
 {
 	size_t i(vec.size());

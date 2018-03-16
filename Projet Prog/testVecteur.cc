@@ -26,6 +26,9 @@ int main()
     
     cout<<"Maintenant Vec1= "<<vect1<<endl;
     cout<<"Maintenant Vec3= "<<vect3<<endl;
+    
+    double j(vect1*vect2);
+    cout<<"Le produit scalaire de Vect1 et Vect2 vaut :"<<j<<endl;
 
     
     
@@ -38,7 +41,7 @@ int main()
     Vecteur v3(v1.addition(v2));
     
     Vecteur v4(v1.soustraction(v2));
-    double k(v3.prod_scal(v2));
+    double k(v3*v2);
     cout << k << endl;
     Vecteur v6(v1.oppose());
     Vecteur v7(v1.mult(10.0));
@@ -47,7 +50,7 @@ int main()
     
     try
     {
-        v8 = (v1.prod_vect(v2));
+
     }
     
     catch (string n)
