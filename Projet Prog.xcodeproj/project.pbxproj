@@ -10,6 +10,7 @@
 		BA38E43E2052EB6000A840FF /* testVecteur.cc in Sources */ = {isa = PBXBuildFile; fileRef = BA38E43D2052EB6000A840FF /* testVecteur.cc */; };
 		BA38E4402052EB6B00A840FF /* Vecteur.cc in Sources */ = {isa = PBXBuildFile; fileRef = BA38E43F2052EB6B00A840FF /* Vecteur.cc */; };
 		BA38E4422052EBA600A840FF /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = BA38E4412052EBA600A840FF /* makefile */; };
+		BA4129C1205C28DE002E9DF0 /* Oscillateur.cc in Sources */ = {isa = PBXBuildFile; fileRef = BA4129C0205C28DE002E9DF0 /* Oscillateur.cc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		BA38E43F2052EB6B00A840FF /* Vecteur.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vecteur.cc; sourceTree = "<group>"; };
 		BA38E4412052EBA600A840FF /* makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
 		BA38E445205821C800A840FF /* Reponse  */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Reponse "; sourceTree = "<group>"; };
+		BA4129C0205C28DE002E9DF0 /* Oscillateur.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Oscillateur.cc; sourceTree = "<group>"; };
+		BA4129C2205C28E9002E9DF0 /* Oscillateur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Oscillateur.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				BA38E4412052EBA600A840FF /* makefile */,
 				BA38E43F2052EB6B00A840FF /* Vecteur.cc */,
 				BA38E445205821C800A840FF /* Reponse  */,
+				BA4129C0205C28DE002E9DF0 /* Oscillateur.cc */,
+				BA4129C2205C28E9002E9DF0 /* Oscillateur.h */,
 			);
 			path = "Projet Prog";
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA38E43E2052EB6000A840FF /* testVecteur.cc in Sources */,
+				BA4129C1205C28DE002E9DF0 /* Oscillateur.cc in Sources */,
 				BA38E4402052EB6B00A840FF /* Vecteur.cc in Sources */,
 				BA38E4422052EBA600A840FF /* makefile in Sources */,
 			);
