@@ -166,10 +166,9 @@ Vecteur:: Vecteur(size_t dimension )
 
 Vecteur:: Vecteur (double x, double y, double z)
 {
-    Vecteur(3);
-    vec[0]=x;
-    vec[1]=y;
-    vec[2]=z;
+    vec.push_back (x);
+    vec.push_back(y);
+    vec.push_back(z);
 }
 
 Vecteur:: Vecteur (coord initialisation)
@@ -179,5 +178,19 @@ Vecteur:: Vecteur (coord initialisation)
         vec.push_back(initialisation[i]);
     }
 }
+
+// ===================================DEFINITIONS OPERATEURS============================================================
+
+ostream& operator<<(ostream& sortie, Vecteur const & autre)  // Affichage
+{
+     autre.affiche(sortie);
+    return sortie;
+}
+
+
+
+
+
+
 
 

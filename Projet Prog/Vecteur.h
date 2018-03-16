@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include <iostream>
 
 
 typedef std::vector<double> coord;
@@ -21,14 +22,11 @@ public:
 //  OPERATEURS INTERNES
     
     
-    
-    
-    
 // METHODES
     
     void augmente(double x);
     void set_coord(int i, double x);
-    void Vecteur::affiche(ostream& s) const;
+    void affiche(std::ostream& cout) const;
     bool compare(Vecteur autre);
     Vecteur addition(Vecteur autre) const;
     Vecteur soustraction(Vecteur autre) const;
@@ -39,3 +37,7 @@ public:
     Vecteur mult(double l) const;
     Vecteur prod_vect(Vecteur vec2) const;
 };
+
+// OPERATEURS EXTERNES
+
+std::ostream& operator<<(std::ostream& sortie, Vecteur const & autre);

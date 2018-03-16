@@ -8,27 +8,43 @@ typedef vector<double> coord;
 
 int main()
 {
+    // un vecteur en 3D :
+    Vecteur vect1(1.0, 2.0, -0.1);
+    
+    // un autre vecteur en 3D
+    Vecteur vect2(2.6, 3.5,  4.1);
+    
+    Vecteur vect3(vect1);  // copie de V1
+    Vecteur vect4(4);      // le vecteur nul en 4D
+    
+    cout << "Vecteur 1 : " << vect1 << endl;
+    cout << "Vecteur 2 : " << vect2 << endl;
+    cout << "Vecteur 4 : " << vect4 << endl;
+    
+    cout << "Le vecteur 1 est ";
+    if (vect1 == vect2) {
+        cout << "égal au";
+    } else {
+        cout << "différent du";
+    }
+    cout << " vecteur 2," << endl << "et est ";
+    if (vect1 != vect3) {
+        cout << "différent du";
+    } else {
+        cout << "égal au";
+    }
+    cout << " vecteur 3." << endl;
+   
+    
+    
     Vecteur v1(3);
     Vecteur v2(2.0,3.0,-1.2);
-    for (int i(0); i < 6; ++i)
-    {
-        double x;
-        cout << "x=";
-        cin >> x;
-        v1.augmente(x);
-    }
     
-    for (int i(0); i < 3; ++i)
-    {
-        double x;
-        cout << "x=";
-        cin >> x;
-        v2.augmente(x);
-    }
+
     Vecteur v3(v1.addition(v2));
     
     Vecteur v4(v1.soustraction(v2));
-    double k(v1.prod_scal(v2));
+    double k(v3.prod_scal(v2));
     cout << k << endl;
     Vecteur v6(v1.oppose());
     Vecteur v7(v1.mult(10.0));
@@ -45,14 +61,12 @@ int main()
         cerr << n << " un vecteur n'est pas de dimension 3" << endl;
     }
     
-    v1.affiche();
+    cout << v1 << endl;
+    cout<< v2<<endl;
+    cout<<v3<<endl;
+    cout<<v4<<endl;
     
-    v2.affiche();
-    v3.affiche();
-    v4.affiche();
-    v6.affiche();
-    v7.affiche();
-    v8.affiche();
+    
     
     return 0;
     
