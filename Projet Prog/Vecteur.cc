@@ -36,27 +36,6 @@ void Vecteur::affiche(ostream& cout) const
     cout<<endl;
 }
 
-bool Vecteur::compare(Vecteur autre)
-{
-    size_t i(vec.size());
-    size_t j(autre.vec.size());
-    if (j == i)
-    {
-        for (size_t k(0); k < i; ++k)
-        {
-            if (vec[k] != autre.vec[k])
-            {
-                return false;
-            }
-        }
-    }
-    else
-    {
-        return false;
-    }
-    return true;
-}
-
 
 Vecteur Vecteur:: addition(Vecteur autre) const
 {
@@ -78,17 +57,6 @@ Vecteur Vecteur::soustraction(Vecteur autre) const
         resultat.vec[i]=vec[i]-autre.vec[i];
 
     }
-    return resultat;
-}
-
-double Vecteur:: prod_scal(Vecteur autre) const
-{
-    double resultat(0.0);
-    for (size_t i(0); i < fmin(vec.size(), autre.vec.size()); ++i)
-    {
-        resultat += vec[i] * autre.vec[i];
-    }
-    
     return resultat;
 }
 
@@ -138,18 +106,6 @@ Vecteur Vecteur:: mult(double l) const
     return resultat;
 }
 
-Vecteur Vecteur:: prod_vect(Vecteur vec2) const
-{
-    if (vec.size() != 3 or vec2.vec.size() != 3)
-    {
-        throw string("erreur de dimension");
-    }
-    Vecteur resultat(3);
-    resultat.vec[0]=(vec[1] * vec2.vec[2] - vec2.vec[1] * vec[2]);
-    resultat.vec[1]=(vec[2] * vec2.vec[0] - vec2.vec[2] * vec[0]);
-    resultat.vec[2]=(vec[0] * vec2.vec[1] - vec2.vec[0] * vec[1]);
-    return resultat;
-}
 
 
 // =====================================DEFINITIONS CONSTRUCTEURS=========================================================
@@ -166,7 +122,7 @@ Vecteur:: Vecteur(size_t dimension )
 
 Vecteur:: Vecteur (double x, double y, double z)
 {
-    vec.push_back (x);
+    vec.push_back(x);
     vec.push_back(y);
     vec.push_back(z);
 }
@@ -183,12 +139,59 @@ Vecteur:: Vecteur (coord initialisation)
 
 ostream& operator<<(ostream& sortie, Vecteur const & autre)  // Affichage
 {
-     autre.affiche(sortie);
+    autre.affiche(sortie);
     return sortie;
 }
 
+const bool Vecteur::operator==(Vecteur autre)
+{
+	size_t i(vec.size());
+	size_t j(autre.vec.size());
+	if (j == i)
+	{
+		for (size_t k(0); k < i; ++k)
+		{
+			if (vec[k] != autre.vec[k])
+			{
+				return false;
+			}
+		}
+	}
+	else
+	{
+		return false;
+	}
+	return true;
+}
 
+const bool operator!=(Vecteur a, Vecteur const& b)
+{
+	if (a == b) { return false; }
+	else { return true; }
+}
 
+double Vecteur::operator*(Vecteur autre) const
+{
+	double resultat(0.0);
+	for (size_t i(0); i < fmin(vec.size(), autre.vec.size()); ++i)
+	{
+		resultat += vec[i] * autre.vec[i];
+	}
+	return resultat;
+}
+
+const Vecteur Vecteur::operator^(Vecteur vec2) const
+{
+	if (vec.size() != 3 or vec2.vec.size() != 3)
+	{
+		throw string("erreur de dimension");
+	}
+	Vecteur resultat(3);
+	resultat.vec[0] = (vec[1] * vec2.vec[2] - vec2.vec[1] * vec[2]);
+	resultat.vec[1] = (vec[2] * vec2.vec[0] - vec2.vec[2] * vec[0]);
+	resultat.vec[2] = (vec[0] * vec2.vec[1] - vec2.vec[0] * vec[1]);
+	return resultat;
+}
 
 
 
