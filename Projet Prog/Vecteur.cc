@@ -2,6 +2,7 @@
 #include <vector>
 #include <cmath>
 #include "Vecteur.h"
+#include <initializer_list>
 
 using namespace std;
 //=============================================DECLARATION METHODES=======================================================

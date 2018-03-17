@@ -6,17 +6,24 @@
 
 using namespace std;
 
-//DEFINITION DES METHODES
-
-
-//DEFINITION CONSTRUCTEURS
-
-
-//DEFINITION OPERATEURS EXTERNES
-
-ostream& operator<<(ostream& sortie, Oscillateur const & autre)
+//============================================DEFINITION DES METHODES====================================================
+void Oscillateur:: affiche(std::ostream& cout) const
 {
     
+}
+//============================================DEFINITION CONSTRUCTEURS===================================================
+
+
+//============================================DEFINITION OPERATEURS================================================
+
+//===================================================INTERNE==============================================================
+
+//===================================================EXTERNE=============================================================
+
+ostream& operator<<(ostream& sortie, Oscillateur const & autre)  // Affichage
+{
+    autre.affiche(sortie);
+    return sortie;
 }
 
 
