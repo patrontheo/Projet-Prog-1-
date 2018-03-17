@@ -21,3 +21,4 @@ std::ostream& operator<<(std::ostream& sortie,Oscillateur const & autre);
 
 
 
+//

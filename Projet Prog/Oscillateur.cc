@@ -27,3 +27,5 @@ ostream& operator<<(ostream& sortie, Oscillateur const & autre)  // Affichage
 }
 
 
+
+//
