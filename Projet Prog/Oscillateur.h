@@ -1,12 +1,21 @@
-  #pragma once
+#pragma once
 
-#include <iostream>
 #include <vector>
+#include <iostream>
+#include "Vecteur.h"
 
-class Oscillateur
-{
+typedef std::vector<double> coord;
+
+class Oscillateur {
 private:
-	vector<double>parametre;
-	double derivee;
+	Vecteur p;
+	Vecteur vitesse;
+
+
+public:
+	void affiche(std::ostream& cout) const;
+	void equation_evolution(double t, Vecteur p, Vecteur q);
 
 };
+
+std::ostream& operator<<(std::ostream& sortie, Oscillateur const & autre);
