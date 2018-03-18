@@ -4,7 +4,6 @@
 #include <iostream>
 #include "Vecteur.h"
 
-typedef std::vector<double> coord;
 
 class Oscillateur {
 private:
@@ -15,6 +14,8 @@ private:
 public:
 	void affiche(std::ostream& cout) const;
 	void equation_evolution(double t, Vecteur p, Vecteur q);
+	void set(Vecteur);
+	Vecteur get();
 
 };
 
