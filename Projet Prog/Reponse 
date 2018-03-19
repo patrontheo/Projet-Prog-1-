@@ -1,3 +1,19 @@
-//=======================================================REPONSES========================================================
+//===================================================REPONSES=============================================================
+
+======================================================SEMAINE 1===========================================================
+
+[Question P1.1] Comment représentez-vous ces vecteurs ? Comment sont-ils organisés : quels attributs ? quelles méthodes ? quels droits d'accès ?
+
+Réponse :
+
+Nos vecteurs sont representés par un tableau permettant de stocker chaque coordonnées. Par souci de clarté et pour simplifier l'ecriture nous avons defini un typedef coord qui initialise un tableau sans dimension (car la dimesion peut varier d'un vecteur à l'autre).
+Pour conserver l'encapsulation nous avons placé les attributs en "private" le seul attribut étant le tableau de coordonnés. En revanche comme toutes nos methodes (augment(), set coord(), affiche() ou compare()) ont pour but d'être maniées par l'utilisateur nous les avons placé en public.
+
+[Question P1.2] Quel choix avez vous fait pour les opérations entre vecteurs de dimensions différentes ?
+
+Réponse :
+
+Pour les opérations entre vecteurs de dimensions différente nous avons décidé que ce sera la vecteur ayant la plus petite dimension qui determinera toute fin d'iteration (boucle for pour acceder a chaque coordonnées d'un vecteur) car cela nous assure d'éviter des "segmentation fault" l'accé a des cases d'un tableau qui n'existe pas. Dans la pratique nous avons fait appel a la bibliothèque <cmath> pour faire appel a la fonction fmin qui compare les dimensions et renvoit la plus petite. Ce choix s'applique pour les fonctions addition, soustraction. Pour le produit vectoriel en revanche nous utilisons la gestion d'erreur try, throw, catch car nous sommes dans le cas particulier ou il n'y a que la dimension 3 possible. Ainsi si l'utilisateur rentre n'importe quelle autre dimension il recevra un message d'erreur et la fonction ne sera pas executé.
+
 
 
