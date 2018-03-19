@@ -10,16 +10,10 @@ using namespace std;
 void Oscillateur::affiche(ostream& cout) const
 {
 	cout << "# Oscillateur" << endl;
-	for (auto element : p)
-	{
-		cout << element << " ";
-	}
-	cout << "# parametres" << endl;
-	for (auto element : vitesse)
-	{
-		cout << element << " ";
-	}
-	cout << "# vitesse" << endl;
+    cout<<p;
+	cout << " # parametres" << endl;
+    cout<<vitesse;
+	cout << " # vitesse" << endl;
 }
 
 void Oscillateur::equation_evolution(double t, Vecteur p, Vecteur q)
