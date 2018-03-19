@@ -46,7 +46,7 @@ Ensuite nous avons crée les opérateurs suivants :
 +,-, !=, *,
 Ces opérateurs sont externes car ils créent une nouvelle instance et exploitent les opérateurs internes (ex : +=) mais ne ne nécessite pas d'accés (car pas de modification):
 
-
+//================================================SEMAINE 5===============================================================
 
 
 
