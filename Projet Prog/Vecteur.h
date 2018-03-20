@@ -26,6 +26,8 @@ public:
     double operator*(Vecteur autre) const;
     void operator *=(double a);
     void operator /=(double a);
+    const Vecteur operator^(Vecteur) const;
+
 
 
 
@@ -40,7 +42,6 @@ public:
     double norme2();
     Vecteur oppose() const;
     Vecteur mult(double l) const;
-	const Vecteur operator^(Vecteur) const;
 
 };
 
