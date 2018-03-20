@@ -46,7 +46,7 @@ int main()
     
     
     
-    
+    /*
     Vecteur v1(3);
     Vecteur v2(2.0,3.0,-1.2);
     
@@ -75,8 +75,7 @@ int main()
     cout<< v2<<endl;
     cout<<v3<<endl;
     cout<<v4<<endl;
-    
-    
+    */
     
     return 0;
     

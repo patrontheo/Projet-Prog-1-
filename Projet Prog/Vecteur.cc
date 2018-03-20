@@ -161,7 +161,7 @@ Vecteur Vecteur:: operator -=(Vecteur const& w)  //Soustraction
     return *this;
 }
 
-const bool Vecteur::operator==(Vecteur autre)
+const bool Vecteur::operator==(Vecteur autre)    //compare
 {
 	size_t i(vec.size());
 	size_t j(autre.vec.size());
@@ -182,7 +182,7 @@ const bool Vecteur::operator==(Vecteur autre)
 	return true;
 }
 
-const bool operator!=(Vecteur a, Vecteur const& b)
+const bool operator!=(Vecteur a, Vecteur const& b)      //compare la différence
 {
 	if (a == b) { return false; }
 	else { return true; }
