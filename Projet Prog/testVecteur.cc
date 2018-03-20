@@ -169,11 +169,11 @@ int main()
     cout << "test egalite deux vecteurs  "; // deuxieme sens
     if ( vect3 == vect1)
     {
-        cout << "vect1=vect3"<<endl;
+        cout << "vect3=vect1"<<endl;
     }
     else
     {
-        cout<< "vect1 != vect 3"<<endl;
+        cout<< "vect3 != vect 1"<<endl;
     }
     
     

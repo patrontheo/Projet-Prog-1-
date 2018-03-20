@@ -154,9 +154,13 @@ Vecteur Vecteur::operator +=(Vecteur const& w)  //Addition
 
 Vecteur Vecteur:: operator -=(Vecteur const& w)  //Soustraction
 {
-    for (size_t i(0); i<vec.size();++i)
+    for (size_t i(0); i<fmin(vec.size(),w.vec.size());++i)
     {
         vec[i]= vec[i]-w.vec[i];
+    }
+    while (vec.size() > w.vec.size())
+    {
+        vec.pop_back();
     }
     return *this;
 }

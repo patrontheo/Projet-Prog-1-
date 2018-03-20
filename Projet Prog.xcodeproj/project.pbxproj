@@ -70,8 +70,8 @@
 			children = (
 				BA38E43C2052EB3F00A840FF /* Vecteur.h */,
 				BA38E43D2052EB6000A840FF /* testVecteur.cc */,
-				BA38E4412052EBA600A840FF /* makefile */,
 				BA38E43F2052EB6B00A840FF /* Vecteur.cc */,
+				BA38E4412052EBA600A840FF /* makefile */,
 				BA38E445205821C800A840FF /* Reponse  */,
 				BA4129C3205D57A7002E9DF0 /* Oscillateur.cc */,
 				BA4129C5205D57B0002E9DF0 /* Oscillateur.h */,
