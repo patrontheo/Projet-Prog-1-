@@ -143,6 +143,7 @@ ostream& operator<<(ostream& sortie, Vecteur const & autre)  // Affichage
     autre.affiche(sortie);
     return sortie;
 }
+
 Vecteur Vecteur::operator +=(Vecteur const& w)  //Addition
 {
     for (size_t i(0); i<vec.size(); ++i)
@@ -154,14 +155,15 @@ Vecteur Vecteur::operator +=(Vecteur const& w)  //Addition
 
 Vecteur Vecteur:: operator -=(Vecteur const& w)  //Soustraction
 {
-    for (size_t i(0); i<fmin(vec.size(),w.vec.size());++i)
+    if (vec.size() < w.vec.size())
+    {
+        
+    }
+    for (size_t i(0); i<vec.size() ;++i)
     {
         vec[i]= vec[i]-w.vec[i];
     }
-    while (vec.size() > w.vec.size())
-    {
-        vec.pop_back();
-    }
+   
     return *this;
 }
 
