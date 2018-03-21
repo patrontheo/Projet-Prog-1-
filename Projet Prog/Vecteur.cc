@@ -5,9 +5,8 @@
 #include <initializer_list>
 
 using namespace std;
-//=============================================DECLARATION METHODES=======================================================
 
-typedef std:: vector<double> coord;
+//=============================================DECLARATION METHODES=======================================================
 
 
 void Vecteur :: augmente(double x)

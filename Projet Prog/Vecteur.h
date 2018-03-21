@@ -19,6 +19,7 @@ public:
     Vecteur (coord initialisation);
     Vecteur (Vecteur const& autre) : vec(autre.vec) {}
     
+    
 //  OPERATEURS INTERNES
     Vecteur operator +=(Vecteur const& w);
     Vecteur  operator -=(Vecteur const& w);
@@ -27,7 +28,6 @@ public:
     void operator *=(double a);
     void operator /=(double a);
     const Vecteur operator^(Vecteur) const;
-
 
 
 
