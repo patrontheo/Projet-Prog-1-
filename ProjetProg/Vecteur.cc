@@ -234,6 +234,26 @@ const Vecteur operator *(Vecteur v, double a)        //Multiplication par un sca
     return (a * v);
 }
 
+bool Vecteur:: dimension(coord p, coord q)
+{
+    if(p.size()==q.size())
+    {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+double Vecteur:: get_coord(int i)
+{
+    return vec[i];
+}
+
+size_t Vecteur:: get_dimension()
+{
+    return vec.size()
+}
+
 
 
 

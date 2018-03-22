@@ -18,11 +18,12 @@ public:
 	void set(Vecteur);
 	Vecteur get_p();
     Vecteur get_v();
+    void set_p(Vecteur);
+    void set_v(Vecteur);
     
     
     //CONSTRUCTEURS
     Oscillateur (Vecteur position, Vecteur q) : p(position), vitesse(q) {}
-    Oscillateur ();
 
     
 };

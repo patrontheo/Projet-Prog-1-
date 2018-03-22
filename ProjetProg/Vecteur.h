@@ -35,16 +35,21 @@ public:
     
     void augmente(double x);
     void set_coord(int i, double x);
+    double get_coord(int);
+    size_t get_dimension();
     void affiche(std::ostream& cout) const;
     double norme();
     double norme2();
     Vecteur oppose() const;
+    bool dimension(coord p, coord q);
     //Vecteur mult(double l) const;
 	//Vecteur addition(Vecteur autre) const;
 	//Vecteur soustraction(Vecteur autre) const;
+    
 
 };
 
+// TEST
 void test_vecteur();
 
 // OPERATEURS EXTERNES
