@@ -251,7 +251,7 @@ double Vecteur:: get_coord(int i)
 
 size_t Vecteur:: get_dimension()
 {
-    return vec.size()
+    return vec.size();
 }
 
 

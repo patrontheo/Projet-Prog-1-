@@ -19,3 +19,9 @@ Vecteur.o: Vecteur.cc Vecteur.h
 testVecteur.o: testVecteur.cc Vecteur.h
 
 testVecteur: testVecteur.o Vecteur.o
+
+Oscillateur.o: Oscillateur.cc Oscillateur.h
+
+testOscillateur: testOscillateur.cc Oscillateur.h
+
+testOscillateur: testOscillateur.o Oscillateur.o

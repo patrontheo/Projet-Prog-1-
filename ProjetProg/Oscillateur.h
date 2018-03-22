@@ -2,7 +2,7 @@
 
 #include <vector>
 #include <iostream>
-#include "../ProjetProg/Vecteur.h"
+#include "Vecteur.h"
 
 
 class Oscillateur {

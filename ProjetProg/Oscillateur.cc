@@ -40,6 +40,14 @@ void Oscillateur:: set_p(Vecteur position)
     }
 }
 
+void Oscillateur:: set_v (Vecteur v)
+{
+    for (int i(0); i<v.get_dimension(); ++i)
+    {
+        vitesse.set_coord(i,v.get_coord(i));
+    }
+}
+
 
 
 
