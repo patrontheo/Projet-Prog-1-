@@ -16,9 +16,9 @@ void Oscillateur::affiche(ostream& cout) const
 	cout << " # vitesse" << endl;
 }
 
-Vecteur Oscillateur::equation_evolution(double t, Vecteur p, Vecteur q)
+Vecteur Oscillateur::equation_evolution(double t)
 {
-    Vecteur i = p+q;
+    Vecteur i = p+vitesse;
     return i*t;
 }
 

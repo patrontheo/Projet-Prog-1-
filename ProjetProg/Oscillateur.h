@@ -14,7 +14,7 @@ public:
 
     //METHODES
 	void affiche(std::ostream& cout) const;
-	Vecteur equation_evolution(double t, Vecteur p, Vecteur q);
+	Vecteur equation_evolution(double t);
 	void set(Vecteur);
 	Vecteur get_p();
     Vecteur get_v();

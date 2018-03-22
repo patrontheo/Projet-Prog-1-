@@ -254,6 +254,7 @@ void test_vecteur()
     {
         cerr << n << " un vecteur n'est pas de dimension 3" << endl;
     }
+}
     
     //==========================================Test Oscillateur==========================================================
     
@@ -291,6 +292,6 @@ void test_vecteur()
     */
     
     
-}
+
 
 

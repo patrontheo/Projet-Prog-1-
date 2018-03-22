@@ -45,7 +45,7 @@ public:
 
 };
 
-void testVecteur();
+void test_vecteur();
 
 // OPERATEURS EXTERNES
 

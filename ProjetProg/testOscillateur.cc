@@ -12,6 +12,7 @@ void test_oscillateur()
     cout <<"Test de get() : "<<endl;
     cout <<" De son parametre : "<<test1.get_p()<<endl;
     cout <<" De sa vitesse : "<<test1.get_v()<<endl;
+    cout<<"Sa fonction d'évolution donne pour t: "<<t<<test1.equation_evolution(5)<<endl;
     
     
     

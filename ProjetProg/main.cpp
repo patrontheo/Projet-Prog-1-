@@ -6,9 +6,14 @@
 //  Copyright © 2018 Romain Palazzo. All rights reserved.
 //
 
-#include "main.hpp"
+#include "Vecteur.h"
+#include "Oscillateur.h"
+
 
 int main()
 {
     test_vecteur();
     test_oscillateur();
+    
+    return 0;
+}

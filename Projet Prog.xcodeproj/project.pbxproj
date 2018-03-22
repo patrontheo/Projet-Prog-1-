@@ -64,7 +64,6 @@
 		BA4129C5205D57B0002E9DF0 /* Oscillateur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Oscillateur.h; sourceTree = "<group>"; };
 		BA4129C6205D57B8002E9DF0 /* testOscillateur.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testOscillateur.cc; sourceTree = "<group>"; };
 		BAAC15DD206459E700F32B85 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		BAAC15DE206459E700F32B85 /* main.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = main.hpp; sourceTree = "<group>"; };
 		BAC5049220643B52007D603B /* oscillateur */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = oscillateur; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -116,7 +115,6 @@
 				BA4129C3205D57A7002E9DF0 /* Oscillateur.cc */,
 				BA4129C6205D57B8002E9DF0 /* testOscillateur.cc */,
 				BAAC15DD206459E700F32B85 /* main.cpp */,
-				BAAC15DE206459E700F32B85 /* main.hpp */,
 			);
 			path = ProjetProg;
 			sourceTree = "<group>";
