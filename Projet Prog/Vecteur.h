@@ -54,4 +54,5 @@ const Vecteur operator -(Vecteur v, Vecteur const& w);
 const Vecteur operator /(Vecteur v, double a) ;
 const Vecteur operator *(double a, Vecteur v);
 const Vecteur operator *(Vecteur v, double a);
+const Vecteur operator -(Vecteur v);
 
