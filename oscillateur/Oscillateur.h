@@ -2,7 +2,7 @@
 
 #include <vector>
 #include <iostream>
-#include "Vecteur.h"
+#include "../ProjetProg/Vecteur.h"
 
 
 class Oscillateur {
@@ -15,7 +15,7 @@ public:
 	void affiche(std::ostream& cout) const;
 	Vecteur equation_evolution(double t, Vecteur p, Vecteur q);
 	void set(Vecteur);
-	Vecteur get();
+	Oscillateur get();
 
 };
 

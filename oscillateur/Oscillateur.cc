@@ -2,7 +2,7 @@
 #include <vector>
 #include <cmath>
 #include "Oscillateur.h"
-#include "Vecteur.h"
+#include "../ProjetProg/Vecteur.cc"
 
 using namespace std;
 
@@ -18,15 +18,20 @@ void Oscillateur::affiche(ostream& cout) const
 
 Vecteur Oscillateur::equation_evolution(double t, Vecteur p, Vecteur q)
 {
-    return (p+q)*t;
+    Vecteur i = p+q;
+    return i*t;
 }
 
-Vecteur Oscillateur:: get()
+Oscillateur Oscillateur:: get()
 {
+    
     cout<<"de son parametre : "<<p<<endl;
     cout<<"de sa vitesse : "<<vitesse<<endl;
     cout<<"Sa fonction d'évolution donne pour t= "<<endl;
+    return *this;
 }
+
+
 
 
 //============================================DEFINITION CONSTRUCTEURS===================================================

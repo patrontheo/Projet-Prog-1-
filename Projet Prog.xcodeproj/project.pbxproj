@@ -10,12 +10,38 @@
 		BA38E43E2052EB6000A840FF /* testVecteur.cc in Sources */ = {isa = PBXBuildFile; fileRef = BA38E43D2052EB6000A840FF /* testVecteur.cc */; };
 		BA38E4402052EB6B00A840FF /* Vecteur.cc in Sources */ = {isa = PBXBuildFile; fileRef = BA38E43F2052EB6B00A840FF /* Vecteur.cc */; };
 		BA38E4422052EBA600A840FF /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = BA38E4412052EBA600A840FF /* makefile */; };
-		BA4129C4205D57A7002E9DF0 /* Oscillateur.cc in Sources */ = {isa = PBXBuildFile; fileRef = BA4129C3205D57A7002E9DF0 /* Oscillateur.cc */; };
-		BA4129C7205D57B8002E9DF0 /* testOscillateur.cc in Sources */ = {isa = PBXBuildFile; fileRef = BA4129C6205D57B8002E9DF0 /* testOscillateur.cc */; };
+		BAC5049920643B59007D603B /* testOscillateur.cc in Sources */ = {isa = PBXBuildFile; fileRef = BA4129C6205D57B8002E9DF0 /* testOscillateur.cc */; };
+		BAC5049A20643B60007D603B /* Oscillateur.cc in Sources */ = {isa = PBXBuildFile; fileRef = BA4129C3205D57A7002E9DF0 /* Oscillateur.cc */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAAC15D720643FCB00F32B85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA38E42A2052E9E000A840FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAC5049120643B52007D603B;
+			remoteInfo = oscillateur;
+		};
+		BAAC15D9206447EC00F32B85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA38E42A2052E9E000A840FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA38E4312052E9E000A840FF;
+			remoteInfo = "Projet Prog";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		BA38E4302052E9E000A840FF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		BAC5049020643B52007D603B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -36,10 +62,18 @@
 		BA4129C3205D57A7002E9DF0 /* Oscillateur.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Oscillateur.cc; sourceTree = "<group>"; };
 		BA4129C5205D57B0002E9DF0 /* Oscillateur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Oscillateur.h; sourceTree = "<group>"; };
 		BA4129C6205D57B8002E9DF0 /* testOscillateur.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testOscillateur.cc; sourceTree = "<group>"; };
+		BAC5049220643B52007D603B /* oscillateur */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = oscillateur; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BA38E42F2052E9E000A840FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAC5048F20643B52007D603B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -52,7 +86,8 @@
 		BA38E4292052E9E000A840FF = {
 			isa = PBXGroup;
 			children = (
-				BA38E4342052E9E000A840FF /* Projet Prog */,
+				BA38E4342052E9E000A840FF /* ProjetProg */,
+				BAC5049320643B52007D603B /* oscillateur */,
 				BA38E4332052E9E000A840FF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,11 +96,12 @@
 			isa = PBXGroup;
 			children = (
 				BA38E4322052E9E000A840FF /* Projet Prog */,
+				BAC5049220643B52007D603B /* oscillateur */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BA38E4342052E9E000A840FF /* Projet Prog */ = {
+		BA38E4342052E9E000A840FF /* ProjetProg */ = {
 			isa = PBXGroup;
 			children = (
 				BA38E43C2052EB3F00A840FF /* Vecteur.h */,
@@ -73,11 +109,18 @@
 				BA38E43F2052EB6B00A840FF /* Vecteur.cc */,
 				BA38E4412052EBA600A840FF /* makefile */,
 				BA38E445205821C800A840FF /* Reponse  */,
-				BA4129C3205D57A7002E9DF0 /* Oscillateur.cc */,
+			);
+			path = ProjetProg;
+			sourceTree = "<group>";
+		};
+		BAC5049320643B52007D603B /* oscillateur */ = {
+			isa = PBXGroup;
+			children = (
 				BA4129C5205D57B0002E9DF0 /* Oscillateur.h */,
+				BA4129C3205D57A7002E9DF0 /* Oscillateur.cc */,
 				BA4129C6205D57B8002E9DF0 /* testOscillateur.cc */,
 			);
-			path = "Projet Prog";
+			path = oscillateur;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,10 +137,29 @@
 			buildRules = (
 			);
 			dependencies = (
+				BAAC15D820643FCB00F32B85 /* PBXTargetDependency */,
 			);
 			name = "Projet Prog";
 			productName = "Projet Prog";
 			productReference = BA38E4322052E9E000A840FF /* Projet Prog */;
+			productType = "com.apple.product-type.tool";
+		};
+		BAC5049120643B52007D603B /* oscillateur */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAC5049820643B52007D603B /* Build configuration list for PBXNativeTarget "oscillateur" */;
+			buildPhases = (
+				BAC5048E20643B52007D603B /* Sources */,
+				BAC5048F20643B52007D603B /* Frameworks */,
+				BAC5049020643B52007D603B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAAC15DA206447EC00F32B85 /* PBXTargetDependency */,
+			);
+			name = oscillateur;
+			productName = oscillateur;
+			productReference = BAC5049220643B52007D603B /* oscillateur */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -110,6 +172,10 @@
 				ORGANIZATIONNAME = "Romain Palazzo";
 				TargetAttributes = {
 					BA38E4312052E9E000A840FF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					BAC5049120643B52007D603B = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -128,6 +194,7 @@
 			projectRoot = "";
 			targets = (
 				BA38E4312052E9E000A840FF /* Projet Prog */,
+				BAC5049120643B52007D603B /* oscillateur */,
 			);
 		};
 /* End PBXProject section */
@@ -137,15 +204,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA4129C7205D57B8002E9DF0 /* testOscillateur.cc in Sources */,
 				BA38E43E2052EB6000A840FF /* testVecteur.cc in Sources */,
-				BA4129C4205D57A7002E9DF0 /* Oscillateur.cc in Sources */,
 				BA38E4402052EB6B00A840FF /* Vecteur.cc in Sources */,
 				BA38E4422052EBA600A840FF /* makefile in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BAC5048E20643B52007D603B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAC5049920643B59007D603B /* testOscillateur.cc in Sources */,
+				BAC5049A20643B60007D603B /* Oscillateur.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAAC15D820643FCB00F32B85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAC5049120643B52007D603B /* oscillateur */;
+			targetProxy = BAAC15D720643FCB00F32B85 /* PBXContainerItemProxy */;
+		};
+		BAAC15DA206447EC00F32B85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA38E4312052E9E000A840FF /* Projet Prog */;
+			targetProxy = BAAC15D9206447EC00F32B85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BA38E4372052E9E000A840FF /* Debug */ = {
@@ -267,6 +354,22 @@
 			};
 			name = Release;
 		};
+		BAC5049620643B52007D603B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BAC5049720643B52007D603B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -284,6 +387,15 @@
 			buildConfigurations = (
 				BA38E43A2052E9E000A840FF /* Debug */,
 				BA38E43B2052E9E000A840FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAC5049820643B52007D603B /* Build configuration list for PBXNativeTarget "oscillateur" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAC5049620643B52007D603B /* Debug */,
+				BAC5049720643B52007D603B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
