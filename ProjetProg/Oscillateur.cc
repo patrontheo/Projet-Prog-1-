@@ -19,8 +19,7 @@ void Oscillateur::affiche(ostream& cout) const
 Vecteur Oscillateur::equation_evolution(double t, Vecteur p, Vecteur q)
 {
     Vecteur i = p+q;
-    equa= i*t;
-    return equa;
+    return i*t;
 }
 
 Vecteur Oscillateur:: get_p()
@@ -33,16 +32,11 @@ Vecteur Oscillateur:: get_v()
     return vitesse;
 }
 
-Vecteur Oscillateur:: get_equa()
-{
-    
-    return equa;
-}
+
 
 
 
 //============================================DEFINITION CONSTRUCTEURS===================================================
-
 
 //============================================DEFINITION OPERATEURS=======================================================
 //===================================================INTERNE==============================================================
@@ -54,6 +48,13 @@ ostream& operator<<(ostream& sortie, Oscillateur const & autre)  // Affichage
 	autre.affiche(sortie);
 	return sortie;
 }
+
+
+
+
+
+
+//
 
 
 

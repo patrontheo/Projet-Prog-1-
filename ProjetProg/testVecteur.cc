@@ -2,11 +2,12 @@
 #include <vector>
 #include "Vecteur.h"
 
+
 using namespace std;
 
 typedef vector<double> coord;
 
-int main()
+void test_vecteur()
 {
     
     //===============================initialisation==========================================
@@ -254,6 +255,8 @@ int main()
         cerr << n << " un vecteur n'est pas de dimension 3" << endl;
     }
     
+    //==========================================Test Oscillateur==========================================================
+    
     //===============================anciennes methodes============================================
     
     /*
@@ -287,8 +290,6 @@ int main()
     cout<<v4<<endl;
     */
     
-    
-    return 0;
     
 }
 

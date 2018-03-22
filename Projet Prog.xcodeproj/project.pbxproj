@@ -10,8 +10,9 @@
 		BA38E43E2052EB6000A840FF /* testVecteur.cc in Sources */ = {isa = PBXBuildFile; fileRef = BA38E43D2052EB6000A840FF /* testVecteur.cc */; };
 		BA38E4402052EB6B00A840FF /* Vecteur.cc in Sources */ = {isa = PBXBuildFile; fileRef = BA38E43F2052EB6B00A840FF /* Vecteur.cc */; };
 		BA38E4422052EBA600A840FF /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = BA38E4412052EBA600A840FF /* makefile */; };
-		BAC5049920643B59007D603B /* testOscillateur.cc in Sources */ = {isa = PBXBuildFile; fileRef = BA4129C6205D57B8002E9DF0 /* testOscillateur.cc */; };
-		BAC5049A20643B60007D603B /* Oscillateur.cc in Sources */ = {isa = PBXBuildFile; fileRef = BA4129C3205D57A7002E9DF0 /* Oscillateur.cc */; };
+		BAAC15DB206458BC00F32B85 /* Oscillateur.cc in Sources */ = {isa = PBXBuildFile; fileRef = BA4129C3205D57A7002E9DF0 /* Oscillateur.cc */; };
+		BAAC15DC206458BE00F32B85 /* testOscillateur.cc in Sources */ = {isa = PBXBuildFile; fileRef = BA4129C6205D57B8002E9DF0 /* testOscillateur.cc */; };
+		BAAC15DF206459E700F32B85 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAAC15DD206459E700F32B85 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		BA4129C3205D57A7002E9DF0 /* Oscillateur.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Oscillateur.cc; sourceTree = "<group>"; };
 		BA4129C5205D57B0002E9DF0 /* Oscillateur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Oscillateur.h; sourceTree = "<group>"; };
 		BA4129C6205D57B8002E9DF0 /* testOscillateur.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testOscillateur.cc; sourceTree = "<group>"; };
+		BAAC15DD206459E700F32B85 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		BAAC15DE206459E700F32B85 /* main.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = main.hpp; sourceTree = "<group>"; };
 		BAC5049220643B52007D603B /* oscillateur */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = oscillateur; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,6 +112,11 @@
 				BA38E43F2052EB6B00A840FF /* Vecteur.cc */,
 				BA38E4412052EBA600A840FF /* makefile */,
 				BA38E445205821C800A840FF /* Reponse  */,
+				BA4129C5205D57B0002E9DF0 /* Oscillateur.h */,
+				BA4129C3205D57A7002E9DF0 /* Oscillateur.cc */,
+				BA4129C6205D57B8002E9DF0 /* testOscillateur.cc */,
+				BAAC15DD206459E700F32B85 /* main.cpp */,
+				BAAC15DE206459E700F32B85 /* main.hpp */,
 			);
 			path = ProjetProg;
 			sourceTree = "<group>";
@@ -116,9 +124,6 @@
 		BAC5049320643B52007D603B /* oscillateur */ = {
 			isa = PBXGroup;
 			children = (
-				BA4129C5205D57B0002E9DF0 /* Oscillateur.h */,
-				BA4129C3205D57A7002E9DF0 /* Oscillateur.cc */,
-				BA4129C6205D57B8002E9DF0 /* testOscillateur.cc */,
 			);
 			path = oscillateur;
 			sourceTree = "<group>";
@@ -204,7 +209,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAAC15DC206458BE00F32B85 /* testOscillateur.cc in Sources */,
 				BA38E43E2052EB6000A840FF /* testVecteur.cc in Sources */,
+				BAAC15DF206459E700F32B85 /* main.cpp in Sources */,
+				BAAC15DB206458BC00F32B85 /* Oscillateur.cc in Sources */,
 				BA38E4402052EB6B00A840FF /* Vecteur.cc in Sources */,
 				BA38E4422052EBA600A840FF /* makefile in Sources */,
 			);
@@ -214,8 +222,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAC5049920643B59007D603B /* testOscillateur.cc in Sources */,
-				BAC5049A20643B60007D603B /* Oscillateur.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

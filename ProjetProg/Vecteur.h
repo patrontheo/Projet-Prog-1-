@@ -45,6 +45,8 @@ public:
 
 };
 
+void testVecteur();
+
 // OPERATEURS EXTERNES
 
 std::ostream& operator<<(std::ostream& sortie, Vecteur const & autre);
