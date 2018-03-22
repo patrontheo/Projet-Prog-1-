@@ -25,7 +25,8 @@ int main()
     
     
     //=================================test methodes avec vecteurs de meme taille=============
-    
+    try
+    {
     Vecteur vect5(vect1-vect2);
     cout<<"Vect1 - Vect2 vaut : "<<vect5<<endl;
     Vecteur vect7(vect2-vect1);
@@ -35,7 +36,12 @@ int main()
     cout<<"Vect1 + Vect2 vaut : "<<vect6<<endl;
     Vecteur vect8(vect2+vect1);
     cout<<"Vect2 + Vect1 vaut : "<<vect8<<endl;
-    
+    }
+    catch (string n)
+    {
+        cerr << n << " un vecteur n'est pas de dimension 3" << endl;
+    }
+        
     Vecteur vect9(vect1/2.0);
     cout<< "vect1 divise par 2: " <<vect9<<endl;
     Vecteur vect10(vect1*2.0);
@@ -85,10 +91,15 @@ int main()
         cout<< "vect1 != vect 3"<<endl;
     }
     
-    
+    try
+    {
     vect1+=vect2;
     cout<<"Vec1 += Vec2, Maintenant Vec1= "<<vect1<<endl;
-
+    }
+    catch (string n)
+    {
+        cerr << n << " un vecteur n'est pas de dimension 3" << endl;
+    }
     
     vect3-=vect2;
     cout<<"Vec3 -= Vec2, Maintenant Vec3= "<<vect3<<endl;
@@ -118,16 +129,40 @@ int main()
     cout << endl << endl <<endl <<endl << "test avec vecteur 2 de taille 4 et vect1 de taille 3" <<endl;
     
     vect2.augmente(5.0);   //on a mtn un vecteur de taille 4
-    
+    try
+    {
     Vecteur vect25(vect1-vect2);
     cout<<"Vect1 - Vect2 vaut : "<<vect25<<endl;
+    }
+    catch (string n)
+    {
+        cerr << n << " un vecteur n'est pas de dimension 3" << endl;
+    }
+    try
+    {
     Vecteur vect27(vect2-vect1);
     cout<<"Vect2 - Vect1 vaut : "<<vect27<<endl;
-    
+    }
+    catch (string n)
+    {
+        cerr << n << " un vecteur n'est pas de dimension 3" << endl;
+    }
+    try {
     Vecteur vect26(vect1+vect2);
     cout<<"Vect1 + Vect2 vaut : "<<vect26<<endl;
+    }
+    catch (string n)
+    {
+        cerr << n << " un vecteur n'est pas de dimension 3" << endl;
+    }
+    try{
     Vecteur vect28(vect2+vect1);
     cout<<"Vect2 + Vect1 vaut : "<<vect28<<endl;
+    }
+    catch (string n)
+    {
+        cerr << n << " un vecteur n'est pas de dimension 3" << endl;
+    }
     
     Vecteur vect29(vect1/2.0);
     cout<< "vect1 divise par 2: " <<vect29<<endl;
@@ -177,14 +212,23 @@ int main()
         cout<< "vect3 != vect 1"<<endl;
     }
     
-    
+    try{
     vect1+=vect2;
     cout<<"Vec1 += Vec2, Maintenant Vec1= "<<vect1<<endl;
+    }
+    catch (string n)
+    {
+        cerr << n << " un vecteur n'est pas de dimension 3" << endl;
+    }
     
-    
+    try{
     vect3-=vect2;
     cout<<"Vec3 -= Vec2, Maintenant Vec3= "<<vect3<<endl;
-    
+    }
+    catch (string n)
+    {
+        cerr << n << " un vecteur n'est pas de dimension 3" << endl;
+    }
     
     double l(vect1*vect2); //premier sens
     cout<<"Le produit scalaire de Vect1 et Vect2 vaut :"<<l<<endl;

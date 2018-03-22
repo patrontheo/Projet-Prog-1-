@@ -190,13 +190,13 @@ const Vecteur Vecteur::operator^(Vecteur vec2) const
 
 void Vecteur::operator *=(double a)                //Multiplication par un scalaire
 {
-    for(auto element : (*this).vec)
+    for(auto& element : (*this).vec)
     { element *= a; }
 }
 
 void Vecteur::operator /=(double a)                //Division par un scalaire
 {
-    for(auto element : (*this).vec)
+    for(auto& element : (*this).vec)
     { element /=a; }
 }
 
