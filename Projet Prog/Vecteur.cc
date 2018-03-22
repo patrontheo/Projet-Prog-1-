@@ -37,30 +37,6 @@ void Vecteur::affiche(ostream& cout) const
 }
 
 
-Vecteur Vecteur:: addition(Vecteur autre) const
-{
-    Vecteur resultat(fmin(vec.size(), autre.vec.size()));
-    for (size_t i(0); fmin(vec.size(), autre.vec.size()) > i; ++i)
-    {
-        resultat.vec[i]=vec[i]+autre.vec[i];
-    }
-    return resultat;
-}
-
-
-Vecteur Vecteur::soustraction(Vecteur autre) const
-{
-    
-    Vecteur resultat(fmin(vec.size(), autre.vec.size()));
-    for (size_t i(0); fmin(vec.size(), autre.vec.size()) > i; ++i)
-    {
-        resultat.vec[i]=vec[i]-autre.vec[i];
-
-    }
-    return resultat;
-}
-
-
 double Vecteur:: norme()
 {
     double norme;
@@ -95,17 +71,6 @@ Vecteur Vecteur:: oppose() const
     return resultat;
     
 }
-
-Vecteur Vecteur:: mult(double l) const
-{
-    Vecteur resultat(vec.size());
-    for (size_t i(0); i<vec.size(); ++i)
-    {
-        resultat.vec[i]= l*vec[i];
-    }
-    return resultat;
-}
-
 
 
 // =====================================DEFINITIONS CONSTRUCTEURS=========================================================
@@ -145,6 +110,10 @@ ostream& operator<<(ostream& sortie, Vecteur const & autre)  // Affichage
 
 Vecteur Vecteur::operator +=(Vecteur const& w)  //Addition
 {
+	if ((*this).vec.size() != w.vec.size())
+	{
+		throw string("erreur de dimension");
+	}
     for (size_t i(0); i<vec.size(); ++i)
     {
         vec[i]=vec[i]+w.vec[i];
@@ -154,13 +123,13 @@ Vecteur Vecteur::operator +=(Vecteur const& w)  //Addition
 
 Vecteur Vecteur:: operator -=(Vecteur const& w)  //Soustraction
 {
-    if (vec.size() < w.vec.size())
-    {
-        
-    }
+	if ((*this).vec.size() != w.vec.size())
+	{
+		throw string("erreur de dimension");
+	}
     for (size_t i(0); i<vec.size() ;++i)
     {
-        vec[i]= vec[i]-w.vec[i];
+        vec[i] -= w.vec[i];
     }
    
     return *this;
@@ -195,6 +164,10 @@ const bool operator!=(Vecteur a, Vecteur const& b)      //compare la différence
 
 double Vecteur::operator*(Vecteur autre) const
 {
+	if ((*this).vec.size() != autre.vec.size())
+	{
+		throw string("erreur de dimension");
+	}
 	double resultat(0.0);
 	for (size_t i(0); i < fmin(vec.size(), autre.vec.size()); ++i)
 	{
@@ -218,14 +191,14 @@ const Vecteur Vecteur::operator^(Vecteur vec2) const
 
 void Vecteur::operator *=(double a)                //Multiplication par un scalaire
 {
-    for(size_t i(0); i < vec.size(); ++i)
-    { vec[i] = vec[i] * a; }
+    for(auto element : (*this).vec)
+    { element *= a; }
 }
 
 void Vecteur::operator /=(double a)                //Division par un scalaire
 {
-    for(size_t i(0); i < vec.size(); ++i)
-    { vec[i] = vec[i] / a; }
+    for(auto element : (*this).vec)
+    { element /=a; }
 }
 
 const Vecteur operator +(Vecteur v, Vecteur const& w)  //Addition
@@ -246,13 +219,13 @@ const Vecteur operator /(Vecteur v, double a)            //Division par un scala
     return v;
 }
 
-const Vecteur operator *(double a, Vecteur v)       //Multiplication par un scalaire
+const Vecteur operator *(double a, Vecteur v)       //Multiplication par un scalaire à gauche
 {
     v *= a;
     return v;
 }
 
-const Vecteur operator *(Vecteur v, double a)
+const Vecteur operator *(Vecteur v, double a)        //Multiplication par un scalaire à droite
 {
     return (a * v);
 }
@@ -260,5 +233,39 @@ const Vecteur operator *(Vecteur v, double a)
 
 
 
+/*
+Vecteur Vecteur:: addition(Vecteur autre) const
+{
+Vecteur resultat(fmin(vec.size(), autre.vec.size()));
+for (size_t i(0); fmin(vec.size(), autre.vec.size()) > i; ++i)
+{
+resultat.vec[i]=vec[i]+autre.vec[i];
+}
+return resultat;
+}
 
+
+Vecteur Vecteur::soustraction(Vecteur autre) const
+{
+
+Vecteur resultat(fmin(vec.size(), autre.vec.size()));
+for (size_t i(0); fmin(vec.size(), autre.vec.size()) > i; ++i)
+{
+resultat.vec[i]=vec[i]-autre.vec[i];
+
+}
+return resultat;
+}
+
+Vecteur Vecteur:: mult(double l) const
+{
+Vecteur resultat(vec.size());
+for (size_t i(0); i<vec.size(); ++i)
+{
+resultat.vec[i]= l*vec[i];
+}
+return resultat;
+}
+
+*/
 
