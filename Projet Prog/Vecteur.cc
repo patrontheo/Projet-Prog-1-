@@ -64,11 +64,11 @@ double Vecteur::norme2()
 Vecteur Vecteur:: oppose() const
 {
     Vecteur resultat(vec.size());
-    for (auto element : (*this).vec)
+    for (size_t i(0); i<vec.size(); ++i)
     {
-        element = -element;
+        resultat.vec[i]= -vec[i];
     }
-    return resultat;
+        return resultat;
 }
 
 
