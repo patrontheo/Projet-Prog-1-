@@ -21,8 +21,7 @@ Pour les opérations entre vecteurs de dimensions différente nous avons décid�
 
 Réponse :
 
-Nous avons jugé utile de définir un constructeur de copie dans le cas par exemple ou l'on souhaite echangé les coordonnés entre 2 vecteurs nous pourrions aisni définir un 3ème vecteurs de transitions pour réaliser cette tache. De plus ce choix est appuyé par le fait que nous n'avons pas de constrcteur de copie par defaut car nous avec crée d'autres constrcteurs.
-
+Nous n'avons pas ajouté de constructeur de copie car pour les taches dans lequelles un constrcteur de copie pourrait être util nous estimons que le constrcteur de copie par défaut suffit, il n'y a pas besoin de compteur ou autre spécifité propre à un constructeur de copie que nous etablissons. 
 [Question P4.2] Si l'on souhaitait ajouter un constructeur par coordonnées sphériques (deux angles et une longueur) pour les vecteurs de dimension 3,
 a] que cela impliquerait-il au niveau des attributs de la classe ?
 b] quelle serait la difficulté majeure (voire l'impossibilité) de sa réalisation en C++ ? (C'est d'ailleurs pour cela qu'on ne vous demande pas de faire un tel constructeur !)

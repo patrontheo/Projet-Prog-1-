@@ -16,9 +16,16 @@ void Oscillateur::affiche(ostream& cout) const
 	cout << " # vitesse" << endl;
 }
 
-void Oscillateur::equation_evolution(double t, Vecteur p, Vecteur q)
+Vecteur Oscillateur::equation_evolution(double t, Vecteur p, Vecteur q)
 {
-
+    Vecteur resultat(p.vec.size());
+    for (int i(1); i<t; ++i)
+    {
+        for (int i(0); i<p.vec.size(); ++i)
+        {
+            resultat.vec[i]=p.vec[i]+q.vec[i];
+        }
+    }
 }
 
 
@@ -35,3 +42,14 @@ ostream& operator<<(ostream& sortie, Oscillateur const & autre)  // Affichage
 	autre.affiche(sortie);
 	return sortie;
 }
+
+
+
+
+
+
+
+
+
+
+
