@@ -36,12 +36,12 @@ public:
     void augmente(double x);
     void set_coord(int i, double x);
     void affiche(std::ostream& cout) const;
-    Vecteur addition(Vecteur autre) const;
-    Vecteur soustraction(Vecteur autre) const;
     double norme();
     double norme2();
     Vecteur oppose() const;
-    Vecteur mult(double l) const;
+    //Vecteur mult(double l) const;
+	//Vecteur addition(Vecteur autre) const;
+	//Vecteur soustraction(Vecteur autre) const;
 
 };
 

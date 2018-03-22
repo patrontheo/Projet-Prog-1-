@@ -64,12 +64,11 @@ double Vecteur::norme2()
 Vecteur Vecteur:: oppose() const
 {
     Vecteur resultat(vec.size());
-    for (size_t i(0); i<vec.size(); ++i)
+    for (auto element : (*this).vec)
     {
-        resultat.vec[i]=-vec[i];
+        element = -element;
     }
     return resultat;
-    
 }
 
 
@@ -211,6 +210,11 @@ const Vecteur operator -(Vecteur v, Vecteur const& w)  //Soustraction
 {
     v -=w;
     return v;
+}
+
+const Vecteur operator -(Vecteur v)                    //Opposé d'un vecteur
+{
+	return (v.oppose());
 }
 
 const Vecteur operator /(Vecteur v, double a)            //Division par un scalaire

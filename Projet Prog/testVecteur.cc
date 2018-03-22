@@ -43,7 +43,8 @@ int main()
     Vecteur vect11(2.0*vect1);
     cout<< "vect1 multiplie par 2 a gauche: " <<vect11<<endl;
     
-    
+	cout << "vect 1 opposé : " << -vect1 << endl;
+
     cout << "test non egalite deux vecteur (vect1 et vect2):  "; //premier sens
     if (vect1 != vect2)
     {
