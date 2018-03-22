@@ -19,18 +19,25 @@ void Oscillateur::affiche(ostream& cout) const
 Vecteur Oscillateur::equation_evolution(double t, Vecteur p, Vecteur q)
 {
     Vecteur i = p+q;
-    return i*t;
+    equa= i*t;
+    return equa;
 }
 
-Oscillateur Oscillateur:: get()
+Vecteur Oscillateur:: get_p()
+{
+    return p;
+}
+
+Vecteur Oscillateur:: get_v()
+{
+    return vitesse;
+}
+
+Vecteur Oscillateur:: get_equa()
 {
     
-    cout<<"de son parametre : "<<p<<endl;
-    cout<<"de sa vitesse : "<<vitesse<<endl;
-    cout<<"Sa fonction d'évolution donne pour t= "<<endl;
-    return *this;
+    return equa;
 }
-
 
 
 
