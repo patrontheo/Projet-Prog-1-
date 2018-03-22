@@ -18,14 +18,14 @@ void Oscillateur::affiche(ostream& cout) const
 
 Vecteur Oscillateur::equation_evolution(double t, Vecteur p, Vecteur q)
 {
-    Vecteur resultat(p.vec.size());
-    for (int i(1); i<t; ++i)
-    {
-        for (int i(0); i<p.vec.size(); ++i)
-        {
-            resultat.vec[i]=p.vec[i]+q.vec[i];
-        }
-    }
+    return (p+q)*t;
+}
+
+Vecteur Oscillateur:: get()
+{
+    cout<<"de son parametre : "<<p<<endl;
+    cout<<"de sa vitesse : "<<vitesse<<endl;
+    cout<<"Sa fonction d'évolution donne pour t= "<<endl;
 }
 
 
