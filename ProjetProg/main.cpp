@@ -12,7 +12,6 @@
 
 int main()
 {
-    test_vecteur();
     test_oscillateur();
     
     return 0;

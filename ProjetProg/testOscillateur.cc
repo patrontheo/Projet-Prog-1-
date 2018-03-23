@@ -24,8 +24,10 @@ void test_oscillateur()
     cout<<" donne : "<<endl;
     test1.set_p(vec3);
     cout<<test1.get_p()<<" #parametre"<<endl;
+    cout<<test1.get_v()<<" vitesse"<<endl;
     test1.set_v(vec4);
     cout<<"De sa vitesse : "<<vec4<<endl;
+    cout<<test1.get_p()<<endl;
     cout<<test1.get_v()<<endl;
     
     
