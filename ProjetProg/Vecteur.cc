@@ -165,8 +165,7 @@ double Vecteur::operator*(Vecteur autre) const
 {
 	if ((*this).vec.size() != autre.vec.size())
 	{
-		throw string("erreur de dimension");
-	}
+		throw string("erreur de dimension");	}
 	double resultat(0.0);
 	for (size_t i(0); i < fmin(vec.size(), autre.vec.size()); ++i)
 	{
@@ -174,6 +173,7 @@ double Vecteur::operator*(Vecteur autre) const
 	}
 	return resultat;
 }
+
 
 const Vecteur Vecteur::operator^(Vecteur vec2) const
 {

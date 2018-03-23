@@ -1,8 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <cmath>
 #include "Oscillateur.h"
-#include "../ProjetProg/Vecteur.cc"
 
 using namespace std;
 
