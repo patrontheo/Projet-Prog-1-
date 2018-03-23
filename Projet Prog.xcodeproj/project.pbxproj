@@ -12,8 +12,8 @@
 		BA38E4422052EBA600A840FF /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = BA38E4412052EBA600A840FF /* makefile */; };
 		BAAC15DB206458BC00F32B85 /* Oscillateur.cc in Sources */ = {isa = PBXBuildFile; fileRef = BA4129C3205D57A7002E9DF0 /* Oscillateur.cc */; };
 		BAAC15DC206458BE00F32B85 /* testOscillateur.cc in Sources */ = {isa = PBXBuildFile; fileRef = BA4129C6205D57B8002E9DF0 /* testOscillateur.cc */; };
-		BAAC15DF206459E700F32B85 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAAC15DD206459E700F32B85 /* main.cpp */; };
-		BAAC15E2206473EA00F32B85 /* integrateur.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAAC15E0206473EA00F32B85 /* integrateur.cpp */; };
+		BAAC15DF206459E700F32B85 /* main.cc in Sources */ = {isa = PBXBuildFile; fileRef = BAAC15DD206459E700F32B85 /* main.cc */; };
+		BAAC15E2206473EA00F32B85 /* integrateur.cc in Sources */ = {isa = PBXBuildFile; fileRef = BAAC15E0206473EA00F32B85 /* integrateur.cc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,9 +64,9 @@
 		BA4129C3205D57A7002E9DF0 /* Oscillateur.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Oscillateur.cc; sourceTree = "<group>"; };
 		BA4129C5205D57B0002E9DF0 /* Oscillateur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Oscillateur.h; sourceTree = "<group>"; };
 		BA4129C6205D57B8002E9DF0 /* testOscillateur.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testOscillateur.cc; sourceTree = "<group>"; };
-		BAAC15DD206459E700F32B85 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		BAAC15E0206473EA00F32B85 /* integrateur.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = integrateur.cpp; sourceTree = "<group>"; };
-		BAAC15E1206473EA00F32B85 /* integrateur.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = integrateur.hpp; sourceTree = "<group>"; };
+		BAAC15DD206459E700F32B85 /* main.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cc; sourceTree = "<group>"; };
+		BAAC15E0206473EA00F32B85 /* integrateur.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = integrateur.cc; sourceTree = "<group>"; };
+		BAAC15E1206473EA00F32B85 /* integrateur.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = integrateur.h; sourceTree = "<group>"; };
 		BAC5049220643B52007D603B /* oscillateur */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = oscillateur; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -117,9 +117,9 @@
 				BA4129C5205D57B0002E9DF0 /* Oscillateur.h */,
 				BA4129C3205D57A7002E9DF0 /* Oscillateur.cc */,
 				BA4129C6205D57B8002E9DF0 /* testOscillateur.cc */,
-				BAAC15E0206473EA00F32B85 /* integrateur.cpp */,
-				BAAC15E1206473EA00F32B85 /* integrateur.hpp */,
-				BAAC15DD206459E700F32B85 /* main.cpp */,
+				BAAC15E0206473EA00F32B85 /* integrateur.cc */,
+				BAAC15E1206473EA00F32B85 /* integrateur.h */,
+				BAAC15DD206459E700F32B85 /* main.cc */,
 			);
 			path = ProjetProg;
 			sourceTree = "<group>";
@@ -214,9 +214,9 @@
 			files = (
 				BAAC15DC206458BE00F32B85 /* testOscillateur.cc in Sources */,
 				BA38E43E2052EB6000A840FF /* testVecteur.cc in Sources */,
-				BAAC15DF206459E700F32B85 /* main.cpp in Sources */,
+				BAAC15DF206459E700F32B85 /* main.cc in Sources */,
 				BAAC15DB206458BC00F32B85 /* Oscillateur.cc in Sources */,
-				BAAC15E2206473EA00F32B85 /* integrateur.cpp in Sources */,
+				BAAC15E2206473EA00F32B85 /* integrateur.cc in Sources */,
 				BA38E4402052EB6B00A840FF /* Vecteur.cc in Sources */,
 				BA38E4422052EBA600A840FF /* makefile in Sources */,
 			);

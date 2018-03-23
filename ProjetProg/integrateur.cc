@@ -6,7 +6,7 @@
 //  Copyright © 2018 Romain Palazzo. All rights reserved.
 //
 
-#include "integrateur.hpp"
+#include "integrateur.h"
 
 void test_integrateur()
 {
